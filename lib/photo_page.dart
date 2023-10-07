@@ -62,12 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Animal Picture Search'),
-        toolbarHeight: 80,
+        //toolbarHeight: 80,
       ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.all(5),
             child: TextField(
               onChanged: (query) {
                 // Update the query as the user types
@@ -107,13 +107,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           return false;
                         },
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(5.0),
                           child: GridView.builder(
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
                               crossAxisSpacing: 4,
-                              mainAxisSpacing: 8,
+                              mainAxisSpacing: 5,
                             ),
                             itemCount: _images.length,
                             itemBuilder: (context, index) {
