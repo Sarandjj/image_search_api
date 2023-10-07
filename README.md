@@ -1,16 +1,44 @@
-# task1
+# Animal Picture Search
 
-A new Flutter project.
+## Folder Structure
 
-## Getting Started
+Our project is structured as follows:
 
-This project is a starting point for a Flutter application.
+- `/lib`: Contains the Dart source code for the app.
+- `/assets`: Stores any static assets, such as images.
+- `/test`: Holds test files for unit and widget testing.
+- `/android` and `/ios`: Platform-specific configurations and code.
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Once the app is running, you can use it to:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Search for animal pictures by typing keywords in the search bar.
+- Scroll through search results in a visually pleasing grid layout.
+- Load more images as you reach the end of the current list.
+- Enjoy beautiful animal images fetched from Unsplash's extensive collection.
+
+## Contributing
+
+We welcome contributions from the community. If you'd like to contribute, please follow these guidelines:
+
+1. Fork this repository and create a branch for your contribution.
+2. Make your changes, whether they are bug fixes, new features, or improvements.
+3. Write unit and widget tests for your changes to ensure they work correctly.
+4. Submit a pull request, providing a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License. For more details, see the LICENSE file.
+
+## Dependencies
+
+This project relies on the following external packages:
+
+- `http`: Used for making HTTP requests to the Unsplash API.
+- `provider`: Employed for state management.
+
+## Configuration
+
+To configure the app for your needs, you must provide an Unsplash API key. Create a `.env` file in the project root and add your API key as follows:
+
